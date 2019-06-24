@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0150cf0b-49a5-4c54-a1b9-0db95d44c778" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/training/pages/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/training/locators/id/ForgotPasswordId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/training/locators/id/ForgotPasswordId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/training/pages/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/training/pages/ForgotPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/training/tests/ForgotPasswordIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/training/tests/ForgotPasswordIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/training/pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/training/pages/PageBase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,16 +15,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/training/pages/ForgotPasswordPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="420">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#234#235#0" expanded="true" />
                 <element signature="e#263#264#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -79,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/training/pages/PageBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#162#163#0" expanded="true" />
@@ -143,11 +150,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/java/com/training/pages/PageBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/training/locators/id/ForgotPasswordId.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/training/tests/ForgotPasswordIT.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/training/pages/PageBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/training/pages/ForgotPasswordPage.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -180,7 +187,6 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
     <option name="y" value="23" />
     <option name="width" value="1529" />
     <option name="height" value="958" />
@@ -356,23 +362,26 @@
     <history-entry file="ForgotPasswordIT_googleSearch - 2019.06.23 at 10h 52m 53s.xml">
       <configuration name="ForgotPasswordIT.googleSearch" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ForgotPasswordIT_googleSearch - 2019.06.23 at 21h 41m 05s.xml">
+      <configuration name="ForgotPasswordIT.googleSearch" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="23" width="1529" height="958" extended-state="0" />
+    <frame x="0" y="23" width="1529" height="958" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22797579" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22797579" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.371293" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.371293" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.569395" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39976275" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39976275" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -396,13 +405,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -437,18 +439,6 @@
           <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#1206#1207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/training/pages/PageBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -493,15 +483,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/training/pages/PageBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/training/pages/ForgotPasswordPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="420">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#234#235#0" expanded="true" />
             <element signature="e#263#264#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>

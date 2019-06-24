@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class PageBase {
 
-    private WebDriver driver;
+    public WebDriver driver;
 
     //constructor
     public PageBase(WebDriver incomingDriver) {

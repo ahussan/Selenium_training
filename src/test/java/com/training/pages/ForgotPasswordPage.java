@@ -10,9 +10,6 @@ import static com.training.locators.id.ForgotPasswordId.RETRIVE_PASSWORD_BUTTON;
 
 public class ForgotPasswordPage extends PageBase {
 
-    private WebDriver driver;
-
-
     public ForgotPasswordPage(WebDriver driver) {
         super(driver);
     }
