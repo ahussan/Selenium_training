@@ -11,8 +11,7 @@ public class ForgotPasswordIT extends TestBase {
         PageBase page = pageFactory(PageBase.class);
         page.navigateToSite("http://the-internet.herokuapp.com/forgot_password")
         .entertextinBox()
-        .clickOnRetrievePasswordButton()
-        ;
+        .clickOnRetrievePasswordButton();
 
     }
 }

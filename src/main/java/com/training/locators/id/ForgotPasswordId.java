@@ -8,7 +8,7 @@ public enum ForgotPasswordId implements Supplier<String > {
 
     EMAIL_TEXT_BOX("email"),
     RETRIVE_PASSWORD_BUTTON("form_submit"),
-    THIRDELEMENT(""),
+    EMAIL_SENT_CONFIRMATION("content"),
 
     ;
 
