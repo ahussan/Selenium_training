@@ -42,8 +42,8 @@ public class ForgotPasswordPage extends PageBase {
         Assert.assertEquals("Your e-mail's been sent!", confirmationText);
 
         return TestBase.pageFactory(ForgotPasswordPage.class); // TODO followup later
-
     }
+
 
 
 }
