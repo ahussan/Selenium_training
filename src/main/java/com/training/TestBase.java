@@ -17,6 +17,9 @@ public class TestBase {
 
     public static WebDriverWait wait;
 
+    public final String APP_URL = "http://the-internet.herokuapp.com/forgot_password";
+    public final String GOOGLE_URL = "https://store.google.com/";
+
 
     @BeforeSuite(alwaysRun = true)
     public static void instantiateDriverObject() {
