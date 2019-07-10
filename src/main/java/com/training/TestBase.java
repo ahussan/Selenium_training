@@ -1,9 +1,13 @@
 package com.training;
 
+import com.training.Browsers.BrowserType;
+import com.training.Browsers.ChromeBrowser;
+import com.training.Browsers.FireFoxBrowser;
 import com.training.reports.ReporterNG;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -26,10 +30,29 @@ public class TestBase {
 
     @BeforeSuite(alwaysRun = true)
     public static void instantiateDriverObject() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        String browser = System.getProperty("Browser");
+        if(browser==null)
+        {
+            browser = System.getenv("Browser");
+            if(browser==null)
+            {
+                browser= "chrome";
+            }
+        }
+
+        switch (browser)
+        {
+            case "chrome":
+                driver = new ChromeBrowser().getWebDriverObject();
+                break;
+            case "firefox":
+                driver = new FireFoxBrowser().getWebDriverObject();
+                break;
+        }
+
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 5);
+        System.out.println("Selected Browser is: " +browser);
     }
 
     @AfterMethod(alwaysRun = true)
