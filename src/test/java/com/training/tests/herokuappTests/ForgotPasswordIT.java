@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class ForgotPasswordIT extends TestBase {
 
-    @Test
+    @Test(groups="qa")
     public void ForgotPasswrod() throws Exception {
         PageBase page = pageFactory(PageBase.class);
         page.navigateToSite(APP_URL)
