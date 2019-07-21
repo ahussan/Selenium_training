@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 
 import java.util.function.Supplier;
 
+
 public enum LandingPageXpath implements Supplier<By> {
     PHONE_MENUS("//button[@data-category-id='phones']"),
 

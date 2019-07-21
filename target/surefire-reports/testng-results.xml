@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-07-20T01:31:25Z" name="Example test run" finished-at="2019-07-20T01:31:41Z" duration-ms="16009">
+  <suite started-at="2019-07-21T14:41:26Z" name="Example test run" finished-at="2019-07-21T14:41:28Z" duration-ms="1919">
     <groups>
+      <group name="qa">
+        <method signature="ForgotPasswordIT.ForgotPasswrod()[pri:0, instance:com.training.tests.herokuappTests.ForgotPasswordIT@4fb64261]" name="ForgotPasswrod" class="com.training.tests.herokuappTests.ForgotPasswordIT"/>
+      </group> <!-- qa -->
     </groups>
-    <test started-at="2019-07-20T01:31:25Z" name="Simple Test" finished-at="2019-07-20T01:31:41Z" duration-ms="16009">
+    <test started-at="2019-07-21T14:41:26Z" name="Simple Test" finished-at="2019-07-21T14:41:28Z" duration-ms="1919">
       <class name="com.training.tests.gpstests.PhoneBuyingIT">
-        <test-method is-config="true" signature="instantiateDriverObject()[pri:0, instance:com.training.tests.gpstests.PhoneBuyingIT@543c6f6d]" started-at="2019-07-20T01:31:19Z" name="instantiateDriverObject" finished-at="2019-07-20T01:31:25Z" duration-ms="5297" status="PASS">
+        <test-method is-config="true" signature="instantiateDriverObject()[pri:0, instance:com.training.tests.gpstests.PhoneBuyingIT@396e2f39]" started-at="2019-07-21T14:41:24Z" name="instantiateDriverObject" finished-at="2019-07-21T14:41:26Z" duration-ms="2255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instantiateDriverObject -->
-        <test-method signature="addPhoneToCart()[pri:0, instance:com.training.tests.gpstests.PhoneBuyingIT@543c6f6d]" started-at="2019-07-20T01:31:25Z" name="addPhoneToCart" finished-at="2019-07-20T01:31:34Z" duration-ms="9670" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addPhoneToCart -->
-        <test-method is-config="true" signature="clearCookies()[pri:0, instance:com.training.tests.gpstests.PhoneBuyingIT@543c6f6d]" started-at="2019-07-20T01:31:34Z" name="clearCookies" finished-at="2019-07-20T01:31:38Z" duration-ms="4040" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearCookies -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.training.tests.gpstests.PhoneBuyingIT@543c6f6d]" started-at="2019-07-20T01:31:41Z" name="quitBrowser" finished-at="2019-07-20T01:31:43Z" duration-ms="2578" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.training.tests.gpstests.PhoneBuyingIT@396e2f39]" started-at="2019-07-21T14:41:28Z" name="quitBrowser" finished-at="2019-07-21T14:41:28Z" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- com.training.tests.gpstests.PhoneBuyingIT -->
       <class name="com.training.tests.herokuappTests.ForgotPasswordIT">
-        <test-method signature="ForgotPasswrod()[pri:0, instance:com.training.tests.herokuappTests.ForgotPasswordIT@1fc2b765]" started-at="2019-07-20T01:31:38Z" name="ForgotPasswrod" finished-at="2019-07-20T01:31:40Z" duration-ms="1761" status="PASS">
+        <test-method signature="ForgotPasswrod()[pri:0, instance:com.training.tests.herokuappTests.ForgotPasswordIT@4fb64261]" started-at="2019-07-21T14:41:26Z" name="ForgotPasswrod" finished-at="2019-07-21T14:41:28Z" duration-ms="1767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForgotPasswrod -->
-        <test-method is-config="true" signature="clearCookies()[pri:0, instance:com.training.tests.herokuappTests.ForgotPasswordIT@1fc2b765]" started-at="2019-07-20T01:31:40Z" name="clearCookies" finished-at="2019-07-20T01:31:41Z" duration-ms="517" status="PASS">
+        <test-method is-config="true" signature="clearCookies()[pri:0, instance:com.training.tests.herokuappTests.ForgotPasswordIT@4fb64261]" started-at="2019-07-21T14:41:28Z" name="clearCookies" finished-at="2019-07-21T14:41:28Z" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearCookies -->

@@ -2,18 +2,18 @@ package com.training;
 
 import com.training.browser.ChromeImplementation;
 import com.training.browser.FireFoxImplementation;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import com.training.reports.ReporterNG;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
 import java.util.concurrent.TimeUnit;
 
+@Listeners(ReporterNG.class)
 public class TestBase {
 
     public static WebDriver driver;
@@ -43,7 +43,6 @@ public class TestBase {
     public static void quitBrowser() {
         driver.quit();
     }
-
     public static <T> T pageFactory(Class<T> clazz) {
         return PageFactory.initElements(driver, clazz);
     }
@@ -51,8 +50,6 @@ public class TestBase {
     private static void assignDriver() {
         if (whichBrowser == null) {
             whichBrowser = "chrome";
-            //WebDriverManager.chromedriver().setup();
-            //driver = new ChromeDriver();
         }
         switch (whichBrowser) {
             case "chrome":

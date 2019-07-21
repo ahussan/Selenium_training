@@ -6,13 +6,11 @@ import org.testng.annotations.Test;
 
 public class PhoneBuyingIT extends TestBase {
 
-    @Test
+    @Test(enabled = false)
     public void addPhoneToCart() {
         PageBase page = pageFactory(PageBase.class);
         page.navigateToGpsLandingPage(GOOGLE_URL)
                 .clickPhonesTopMenu()
                 .clickOnPixelThreePhone();
-        ;
-
     }
 }
