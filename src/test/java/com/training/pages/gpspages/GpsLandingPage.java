@@ -41,5 +41,9 @@ public class GpsLandingPage extends PageBase {
         return TestBase.pageFactory(PixelThreePage.class);
     }
 
+    public void testfun(){
+        System.out.printf("Test function");
+    }
+
 
 }
