@@ -1,20 +1,23 @@
 package com.training.locators.linktext.gpslinktext;
 
+import org.openqa.selenium.By;
+
 import java.util.function.Supplier;
 
-public enum LandingPageLinkText implements Supplier<String> {
+public enum LandingPageLinkText implements Supplier<By> {
 
     PIXEL3("Pixel 3")
 
     ;
 
-    private String link;
+    private By enumLinkText;
 
     LandingPageLinkText(String text){
-        this.link = text;
+        this.enumLinkText = By.linkText(text);
     }
+
     @Override
-    public String get() {
-        return link;
+    public By get() {
+        return enumLinkText;
     }
 }

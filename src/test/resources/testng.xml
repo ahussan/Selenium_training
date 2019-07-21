@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Example test run">
+    <test name="Simple Test">
+        <classes>
+            <class name="com.training.tests.gpstests.PhoneBuyingIT"/>
+            <class name="com.training.tests.herokuappTests.ForgotPasswordIT"/>
+        </classes>
+    </test>
+</suite>
+
+<!-- TODO testng xml file with group-->

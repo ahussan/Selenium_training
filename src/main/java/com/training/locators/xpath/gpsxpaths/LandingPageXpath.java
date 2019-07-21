@@ -1,8 +1,10 @@
 package com.training.locators.xpath.gpsxpaths;
 
+import org.openqa.selenium.By;
+
 import java.util.function.Supplier;
 
-public enum LandingPageXpath implements Supplier<String> {
+public enum LandingPageXpath implements Supplier<By> {
     PHONE_MENUS("//button[@data-category-id='phones']"),
 
     PHONE_SUB_CATEGORIES("//div[@data-subcategory-id='phones']"),
@@ -10,14 +12,14 @@ public enum LandingPageXpath implements Supplier<String> {
 
     ;
 
-    private final String xyz;
+    private final By xyz;
 
     LandingPageXpath(String myxpath ){
-        this.xyz = myxpath;
+        this.xyz = By.xpath(myxpath);
     }
 
     @Override
-    public String get() {
+    public By get() {
         return xyz;
     }
 }

@@ -1,8 +1,11 @@
 package com.training;
 
+import com.training.browser.ChromeImplementation;
+import com.training.browser.FireFoxImplementation;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -14,8 +17,9 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
 
     public static WebDriver driver;
-
     public static WebDriverWait wait;
+    public static String whichBrowser = System.getProperty("Browser");
+
 
     public final String APP_URL = "http://the-internet.herokuapp.com/forgot_password";
     public final String GOOGLE_URL = "https://store.google.com/";
@@ -23,8 +27,8 @@ public class TestBase {
 
     @BeforeSuite(alwaysRun = true)
     public static void instantiateDriverObject() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        //TODO Make Thread safe
+        assignDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 5);
     }
@@ -42,5 +46,26 @@ public class TestBase {
 
     public static <T> T pageFactory(Class<T> clazz) {
         return PageFactory.initElements(driver, clazz);
+    }
+
+    private static void assignDriver() {
+        if (whichBrowser == null) {
+            whichBrowser = "chrome";
+            //WebDriverManager.chromedriver().setup();
+            //driver = new ChromeDriver();
+        }
+        switch (whichBrowser) {
+            case "chrome":
+                driver = new ChromeImplementation().getDriverWithImplementation();
+                break;
+            case "firefox":
+                driver = new FireFoxImplementation().getDriverWithImplementation();
+            case "safari":
+                //TODO
+                break;
+            case "ie":
+                //TODO
+                break;
+        }
     }
 }

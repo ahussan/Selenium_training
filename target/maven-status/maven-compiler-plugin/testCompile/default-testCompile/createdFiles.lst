@@ -1,0 +1,7 @@
+com/training/pages/ForgotPasswordPage.class
+com/training/pages/PageBase.class
+com/training/tests/gpstests/PhoneBuyingIT.class
+com/training/tests/Util.class
+com/training/pages/gpspages/PixelThreePage.class
+com/training/tests/herokuappTests/ForgotPasswordIT.class
+com/training/pages/gpspages/GpsLandingPage.class
