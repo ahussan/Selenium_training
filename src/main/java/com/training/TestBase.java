@@ -1,7 +1,7 @@
 package com.training;
 
-import com.training.Browsers.ChromeBrowser;
-import com.training.Browsers.FireFoxBrowser;
+import com.training.browser.ChromeImplementation;
+import com.training.browser.FireFoxImplementation;
 import com.training.reports.ReporterNG;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -18,6 +18,8 @@ public class TestBase {
 
     public static WebDriver driver;
     public static WebDriverWait wait;
+    public static String whichBrowser = System.getProperty("Browser");
+
 
     public final String APP_URL = "http://the-internet.herokuapp.com/forgot_password";
     public final String GOOGLE_URL = "https://store.google.com/";
@@ -25,6 +27,7 @@ public class TestBase {
 
     @BeforeSuite(alwaysRun = true)
     public static void instantiateDriverObject() {
+        //TODO Make Thread safe
         assignDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 5);
@@ -40,31 +43,26 @@ public class TestBase {
     public static void quitBrowser() {
         driver.quit();
     }
-
     public static <T> T pageFactory(Class<T> clazz) {
         return PageFactory.initElements(driver, clazz);
     }
 
-    private static void assignDriver(){
-        String browser = System.getProperty("Browser");
-        if(browser==null)
-        {
-            browser = System.getenv("Browser");
-            if(browser==null)
-            {
-                browser= "chrome";
-            }
+    private static void assignDriver() {
+        if (whichBrowser == null) {
+            whichBrowser = "chrome";
         }
-
-        switch (browser)
-        {
+        switch (whichBrowser) {
             case "chrome":
-                driver = new ChromeBrowser().getWebDriverObject();
+                driver = new ChromeImplementation().getDriverWithImplementation();
                 break;
             case "firefox":
-                driver = new FireFoxBrowser().getWebDriverObject();
+                driver = new FireFoxImplementation().getDriverWithImplementation();
+            case "safari":
+                //TODO
+                break;
+            case "ie":
+                //TODO
                 break;
         }
-        System.out.println("Selected Browser is: " +browser);
     }
 }

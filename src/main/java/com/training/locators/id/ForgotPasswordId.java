@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import java.util.function.Supplier;
 
-public enum ForgotPasswordId implements Supplier<String > {
+public enum ForgotPasswordId implements Supplier<By > {
 
     EMAIL_TEXT_BOX("email"),
     RETRIVE_PASSWORD_BUTTON("form_submit"),
@@ -12,14 +12,14 @@ public enum ForgotPasswordId implements Supplier<String > {
 
     ;
 
-    private final String id;
+    private final By by;
 
     ForgotPasswordId(String id){
-        this.id = id;
+        this.by = By.id(id);
     }
 
     @Override
-    public String get() {
-        return id;
+    public By get() {
+        return by;
     }
 }

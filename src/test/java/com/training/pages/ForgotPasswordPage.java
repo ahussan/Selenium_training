@@ -19,7 +19,7 @@ public class ForgotPasswordPage extends PageBase {
 
     public ForgotPasswordPage entertextinBox(){
 
-        WebElement textbox = driver.findElement(By.id(EMAIL_TEXT_BOX.get()));
+        WebElement textbox = driver.findElement(EMAIL_TEXT_BOX.get());
 
         textbox.click();
         textbox.sendKeys("123@gmail.com");
@@ -29,10 +29,10 @@ public class ForgotPasswordPage extends PageBase {
 
     public ForgotPasswordPage clickOnRetrievePasswordButton(){
 
-        WebElement button = driver.findElement(By.id(RETRIVE_PASSWORD_BUTTON.get()));
+        WebElement button = driver.findElement(RETRIVE_PASSWORD_BUTTON.get());
         button.click();
 
-        WebElement confirMationTextElement = driver.findElement(By.id(EMAIL_SENT_CONFIRMATION.get()));
+        WebElement confirMationTextElement = driver.findElement(EMAIL_SENT_CONFIRMATION.get());
 
         Assert.assertTrue(confirMationTextElement.isDisplayed());
 

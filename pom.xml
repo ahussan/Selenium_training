@@ -43,10 +43,10 @@
         </dependency>
 
     </dependencies>
-    <build>
-        <plugins>
      <!-- https://www.seleniumeasy.com/maven-tutorials/how-to-execute-selenium-webdriver-testng-xml-using-maven-->
 
+    <build>
+        <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
