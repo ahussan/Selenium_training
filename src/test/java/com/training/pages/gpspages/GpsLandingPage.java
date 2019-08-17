@@ -38,12 +38,16 @@ public class GpsLandingPage extends PageBase {
         Assert.assertTrue(buyButtons.get(0).isDisplayed());
 
         isElementPresentByText(driver, "for 24 mos with 0% APR Google Store Financing");
+
         return TestBase.pageFactory(PixelThreePage.class);
     }
 
-    public void testfun(){
-        System.out.printf("Test function");
+
+    public PixelThreePage rightClickOnPixelThreePhone(){
+
+        return TestBase.pageFactory(PixelThreePage.class);
     }
+
 
 
 }
