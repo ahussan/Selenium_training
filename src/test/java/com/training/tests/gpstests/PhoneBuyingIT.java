@@ -1,6 +1,6 @@
 package com.training.tests.gpstests;
 
-import com.training.TestBase;
+import com.training.tests.TestBase;
 import com.training.pages.PageBase;
 import org.testng.annotations.Test;
 

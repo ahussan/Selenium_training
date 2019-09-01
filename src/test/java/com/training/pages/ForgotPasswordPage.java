@@ -1,13 +1,12 @@
 package com.training.pages;
 
-import com.training.TestBase;
-import com.training.locators.id.ForgotPasswordId;
+import com.training.tests.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import static com.training.locators.id.ForgotPasswordId.*;
+import static com.training.locators.ForgotPasswordLocators.*;
 
 
 public class ForgotPasswordPage extends PageBase {
@@ -17,9 +16,10 @@ public class ForgotPasswordPage extends PageBase {
         super(driver);
     }
 
+
     public ForgotPasswordPage entertextinBox(){
 
-        WebElement textbox = driver.findElement(EMAIL_TEXT_BOX.get());
+        WebElement textbox = driver.findElement(By.id(EMAIL_TEXT_BOX_ID.get()));
 
         textbox.click();
         textbox.sendKeys("123@gmail.com");
@@ -29,10 +29,10 @@ public class ForgotPasswordPage extends PageBase {
 
     public ForgotPasswordPage clickOnRetrievePasswordButton(){
 
-        WebElement button = driver.findElement(RETRIVE_PASSWORD_BUTTON.get());
+        WebElement button = driver.findElement(By.id(RETRIVE_PASSWORD_BUTTON_ID.get()));
         button.click();
 
-        WebElement confirMationTextElement = driver.findElement(EMAIL_SENT_CONFIRMATION.get());
+        WebElement confirMationTextElement = driver.findElement(By.id(EMAIL_SENT_CONFIRMATION_ID.get()));
 
         Assert.assertTrue(confirMationTextElement.isDisplayed());
 
@@ -45,5 +45,12 @@ public class ForgotPasswordPage extends PageBase {
     }
 
 
+    public ForgotPasswordPage verifymessageUsingXpath(){
+        WebElement elementFoundByXpath = driver.findElement(By.xpath(EMAIL_SENT_CONFIRMATION_XPATH.get()));
+        Assert.assertTrue(elementFoundByXpath.isDisplayed());
 
+        String txtInWebPage = elementFoundByXpath.getText();
+        Assert.assertEquals(txtInWebPage, "Your e-mail's been sent!");
+        return this;
+    }
 }
