@@ -1,6 +1,6 @@
 package com.training.pages;
 
-import com.training.TestBase;
+import com.training.tests.TestBase;
 import com.training.action.ActionImplementation;
 import com.training.pages.gpspages.GpsLandingPage;
 import org.openqa.selenium.WebDriver;

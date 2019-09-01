@@ -6,9 +6,9 @@ import java.util.function.Supplier;
 
 public enum ForgotPasswordId implements Supplier<By > {
 
-    EMAIL_TEXT_BOX("email"),
+/*  EMAIL_TEXT_BOX("email"),
     RETRIVE_PASSWORD_BUTTON("form_submit"),
-    EMAIL_SENT_CONFIRMATION("content"),
+    EMAIL_SENT_CONFIRMATION("content"),*/
 
     ;
 

@@ -19,5 +19,3 @@ public class FireFoxImplementation implements IBrowserImplementation {
         return new FirefoxDriver(ffoptions);
     }
 }
-
-

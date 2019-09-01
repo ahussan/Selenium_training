@@ -1,8 +1,7 @@
 package com.training.pages.gpspages;
 
-import com.training.TestBase;
+import com.training.tests.TestBase;
 import com.training.pages.PageBase;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -46,6 +45,10 @@ public class GpsLandingPage extends PageBase {
     public PixelThreePage rightClickOnPixelThreePhone(){
 
         return TestBase.pageFactory(PixelThreePage.class);
+    }
+
+    public void testfun(){
+        System.out.printf("Test function");
     }
 
 

@@ -1,4 +1,4 @@
-package com.training;
+package com.training.tests;
 
 import com.training.browser.ChromeImplementation;
 import com.training.browser.FireFoxImplementation;
